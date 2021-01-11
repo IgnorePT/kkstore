@@ -1,4 +1,15 @@
 <header>
+  <div class="logo">{{ title }}</div>
+  <nav class="nav-bar">
+    <a
+      class="nav-link"
+      *ngFor="let link of links"
+      [routerLink]="link.path"
+      routerLinkActive="active"
+    >
+      {{ link.title }}
+    </a>
+  </nav>
   <a href="/carrinho" class="carrinho">
     <span class="total">Total: 350€</span>
     <span class="quantidade"> 5</span>
