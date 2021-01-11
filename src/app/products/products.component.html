@@ -1,0 +1,7 @@
+<section id="products-container">
+  <app-products-list
+    class="product-grid"
+    [products]="products"
+    (addToCart)="addToCart($event)"
+  ></app-products-list>
+</section>

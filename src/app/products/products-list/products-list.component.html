@@ -1,0 +1,6 @@
+<div class="product card" *ngFor="let product of products">
+  <img class="card-image" [src]="product.photo" />
+  <h3 class="card-title">{{ product.name }}</h3>
+  <p class="card-price">{{ product.price }}€</p>
+  <button (click)="addToCart.emit(product)">Adicionar ao Carrinho</button>
+</div>
